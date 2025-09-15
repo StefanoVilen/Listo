@@ -1,42 +1,39 @@
 {
   "expo": {
-    "name": "tarefas-semanais",
-    "slug": "tarefas-semanais",
+    "name": "Listo",
+    "slug": "listo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "tarefassemanais",
+    "icon": "./assets/icon.png",
+    "scheme": "listo",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": { "UIBackgroundModes": ["fetch"] }
     },
+
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
+      "icon": "./assets/icon.png",
       "edgeToEdgeEnabled": true
     },
+
     "web": {
       "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/favicon.png"
     },
+
     "plugins": [
-      "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/splash.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
       ]
-    ],
-    "experiments": {
-      "typedRoutes": true
-    }
+    ]
   }
 }

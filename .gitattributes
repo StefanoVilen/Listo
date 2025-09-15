@@ -1,0 +1,16 @@
+# Texto sempre como LF no repositório
+* text=auto eol=lf
+
+# Arquivos binários (não mexer em EOL)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.ttf binary
+*.otf binary
+*.zip binary
+
+# (Opcional) Scripts de Windows podem ficar CRLF se você quiser:
+#*.bat text eol=crlf
